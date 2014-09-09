@@ -2,7 +2,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: recipes_
+  database: recipes
   pool: 5
   username:
   password:

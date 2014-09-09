@@ -10,6 +10,8 @@
 <h3>Instructions</h3>
 <% if @recipe.instructions.blank? %>
   <p><%= @recipe.instructions %></p>
+<% else %>
+  <p>The recipe doesn't have instructions.</p>
 <% end %>
 
 <h2>Ingredients</h2>
