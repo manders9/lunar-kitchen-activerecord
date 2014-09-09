@@ -1,10 +1,16 @@
 <h1><%= @recipe.name %></h1>
 
 <h3>Description</h3>
-<p><%= @recipe.description %></p>
+<% if !@recipe.description.blank? %>
+  <p><%= @recipe.description %></p>
+<% else %>
+  <p>The recipe doesn't have a description.</p>
+<% end %>
 
 <h3>Instructions</h3>
-<p><%= @recipe.instructions %></p>
+<% if @recipe.instructions.blank? %>
+  <p><%= @recipe.instructions %></p>
+<% end %>
 
 <h2>Ingredients</h2>
 <ul>
